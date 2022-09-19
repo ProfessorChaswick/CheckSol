@@ -18,6 +18,14 @@
     }
     public static void Main()
     {
+        int number;
+        double dnum;
+        bool Success = int.TryParse("66 ", out number);
+        bool Dsuccess = double.TryParse("23.0", out dnum);
+        Console.Write(Success + ": ");
+        Console.WriteLine(number);
+        Console.Write(Dsuccess + ": ");
+        Console.WriteLine(dnum);
         Console.WriteLine("Result: " + CheckEquality("11", "11"));
     }
 }
